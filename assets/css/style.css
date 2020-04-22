@@ -7,3 +7,19 @@ body {
   main {
     flex: 1 0 auto;
   }
+
+  .carousel {
+    height: 600px;
+    perspective: 1000px;
+  }
+  
+  .carousel .carousel-item {
+    left: -200px;
+  }
+  .carousel .carousel-item > img {
+    width: 300%;
+  }
+
+  #port{
+    color: #416cb4;
+  }

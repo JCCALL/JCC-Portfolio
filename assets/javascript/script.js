@@ -5,6 +5,8 @@ $(document).ready(function(){
 
     $('.parallax').parallax();
 
+    $('.carousel').carousel();
+
 
 var firebaseConfig = {
     apiKey: "AIzaSyCTlCEPrbZ3EBwGJeUyVfkI3p54fJP8Bec",
