@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+
+    $('.modal').modal();
+
+    $('.parallax').parallax();
+
+
 var firebaseConfig = {
     apiKey: "AIzaSyCTlCEPrbZ3EBwGJeUyVfkI3p54fJP8Bec",
     authDomain: "jccall-portfolio.firebaseapp.com",
@@ -9,3 +17,19 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  var newContact=[];
+  var database=firebase.database();
+  
+  $("#submitThisForm").on("click", function () {
+	newContact.firstName = $("#name").val();
+	newContact.email = $("#email").val();
+	newContact.message = $("#messageinput").val();
+  
+    database.ref().push(newContact);
+    document.getElementById("myForm").reset();
+  });
+
+
+
+
+});

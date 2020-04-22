@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Portfolio</title>
         <link rel="shorcut icon" href="assets/images/fixicon.jpg" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.min.css"/>
         <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
@@ -13,7 +13,83 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     </head>
     <body>
-    
+        <header>
+            <nav class="grey darken-1">
+                <div class="nav-wrapper">
+                  <a src="#" class="brand-logo"><img src="assets/images/logo.jpeg"></a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light" href="index.html">About Me</a></li>
+                    <li><a class="waves-effect waves-light" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <ul id="mobile-demo" class="sidenav">
+                <li><a class="waves-effect waves-light" href="index.html">About Me</a></li>
+                <li><a class="waves-effect waves-light" href="portfolio.html">Portfolio</a></li>
+                <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Contact</a></li>
+              </ul>
+        </header>
+        <main>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Contact Jordan</h4>
+                    <p class="center-align">Please leave your Name, email, and a brief message and I will get back with you soon.</p>
+                    <form class="contactform" id="myForm">
+                        <input id="name" type="text" class="validate"> 
+                        <label class="contactinput" for="name">Name</label>
+                        <input id="email" type="email" class="validate" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <label class="contactinput" for="email">Email</label>
+                        <span class="helper-text" data-error="Please enter a valid email" data-success="Thanks for using a valid email"></span>
+                        <textarea class="materialize-textarea" id="messageinput"></textarea>
+                        <label class="contactinput" for="textarea1">Message</label>
+                        <br>
+                        <br>
+                        <button id="submitThisForm" class="btn waves-effect waves-light blue darken-3" type="submit" name="action">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect btn-flat">Close</a>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer grey darken-1">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Created By:</h5>
+                  <ul>
+                    <li>Jordan Call</li>
+                  </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li>
+                      <a class="waves-effect waves-light white-text" href="index.html">About Me</a>
+                    </li>
+                    <li>
+                      <a class="waves-effect waves-light white-text" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                      <a class="modal-trigger white-text waves-effect waves-light" href="#modal1">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2020 Copyright
+              </div>
+            </div>
+        </footer>
         <script src="assets/javascript/script.js"></script>
         <script src="assets/materialize/js/materialize.min.js"></script>
     </body>
