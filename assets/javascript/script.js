@@ -5,7 +5,11 @@ $(document).ready(function(){
 
     $('.parallax').parallax();
 
-    $('.carousel').carousel();
+    
+    $('.carousel').carousel({
+      indicators: true,
+    });
+    
 
 
 var firebaseConfig = {

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: trajan;
+  src: url(../font/Trajan\ Bold.ttf);
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -20,6 +25,8 @@ body {
     width: 300%;
   }
 
-  #port{
+  #port, 
+  .gif {
     color: #416cb4;
+    font-family: trajan;
   }
