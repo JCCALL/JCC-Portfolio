@@ -3,6 +3,10 @@
   src: url(../font/Trajan\ Bold.ttf);
 }
 
+#logo {
+  height: 200px;
+  width: 300px;
+}
 body {
     display: flex;
     min-height: 100vh;
