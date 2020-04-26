@@ -8,6 +8,15 @@
   width: 300px;
 }
 
+.smedia {
+  width: 30px;
+  height: 30px;
+}
+
+.smediaf {
+  width: 35px;
+  height: 30px;
+}
 body {
     display: flex;
     min-height: 100vh;

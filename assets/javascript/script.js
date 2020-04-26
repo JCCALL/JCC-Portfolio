@@ -1,18 +1,18 @@
-$(document).ready(function(){
-    $('.sidenav').sidenav();
+$(document).ready(function () {
+  $('.sidenav').sidenav();
 
-    $('.modal').modal();
+  $('.modal').modal();
 
-    $('.parallax').parallax();
-
-    
-    $('.carousel').carousel({
-      indicators: true,
-    });
-    
+  $('.parallax').parallax();
 
 
-var firebaseConfig = {
+  $('.carousel').carousel({
+    indicators: true,
+  });
+
+
+
+  var firebaseConfig = {
     apiKey: "AIzaSyCTlCEPrbZ3EBwGJeUyVfkI3p54fJP8Bec",
     authDomain: "jccall-portfolio.firebaseapp.com",
     databaseURL: "https://jccall-portfolio.firebaseio.com",
@@ -23,14 +23,14 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  var newContact=[];
-  var database=firebase.database();
-  
+  var newContact = [];
+  var database = firebase.database();
+
   $("#submitThisForm").on("click", function () {
-	newContact.firstName = $("#name").val();
-	newContact.email = $("#email").val();
-	newContact.message = $("#messageinput").val();
-  
+    newContact.firstName = $("#name").val();
+    newContact.email = $("#email").val();
+    newContact.message = $("#messageinput").val();
+
     database.ref().push(newContact);
     document.getElementById("myForm").reset();
   });
